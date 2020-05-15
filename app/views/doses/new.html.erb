@@ -1,5 +1,7 @@
-<%= form_for(@dose) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
   <%= f.submit %>
 <% end %>
+
+<p><%= link_to "Back", cocktails_path %></p>
