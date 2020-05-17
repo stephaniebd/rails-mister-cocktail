@@ -11,6 +11,13 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.new
   end
 
+  # def new
+  #   respond_to do |format|
+  #     format.html
+  #     format.js
+  #   end
+  # end
+
   def create
     @cocktail = Cocktail.new(cocktail_params)
     @cocktail.save

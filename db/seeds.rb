@@ -26,7 +26,7 @@ dry_vermouth = Ingredient.create(name: 'dry vermouth')
 sweet_vermouth = Ingredient.create(name: 'sweet vermouth')
 
 # --- cocktails objets stored in variables to use when creating doses
-martini = Cocktail.create(name: 'Sex on the beach')
+martini = Cocktail.create(name: 'Martini')
 dark_and_stormy = Cocktail.create(name: 'Dark & Stormy')
 daiquiri = Cocktail.create(name: 'Margarita')
 negroni = Cocktail.create(name: 'Negroni')
