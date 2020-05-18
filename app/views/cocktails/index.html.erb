@@ -1,28 +1,92 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path 'photoparty.jpeg' %>');">
+  <div class="container">
+    <h1>TIME FOR A DRINK</h1>
+    <p>All your favorites drinks in one place</p>
+    <p class="link-style"><%= link_to "Add a cocktail", new_cocktail_path %></p>
+  </div>
+</div>
+
+
 <div class="container">
-
-  <div class="d-flex container-content">
-    <div class="color-block-content">
-      <h1>TIME<br> FOR<br> A<br> DRINK</h1>
-    </div>
-  </div>
-
-  <div class="color-block-image">
-    <%= image_tag "3 drinks.jpeg", alt: "drinks", width: 450%>
-  </div>
-
-</div>
-
-<p class="text-right" ><%= link_to "Add a cocktail", new_cocktail_path %></p>
-
-<div class="cocktail-container">
-  <ul class="text-right">
+  <div class="row">
     <% @cocktails.each do |cocktail| %>
-        <div style="list-style-type:none;" class="card-description">
-          <li class="cocktail-name"><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+          <div class="card-description">
+            <h2><%= cocktail.name %></h2>
+          </div>
+          <%= link_to cocktail.name, cocktail_path(cocktail), class: 'card-link' %>
         </div>
+      </div>
     <% end %>
-  </ul>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="background-left">
+
+</div>
+
+<div id="main-container" class="d-flex">
+
+  <div class="background-right">
+
+    <p class="text-right text-decoration-none" ><%= link_to "Add a cocktail", new_cocktail_path %></p>
+
+    <div class="cocktail-container">
+      <ul class="text-right">
+        <% @cocktails.each do |cocktail| %>
+            <div class="cocktail-name">
+              <li ><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+            </div>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="container-content">
+      <div class="color-block-content">
+        <h1>TIME<br> FOR<br> A<br> DRINK</h1>
+      </div>
+    </div>
+
+    <div class="color-block-image">
+      <%= image_tag "3 drinks.jpeg", alt: "drinks", width: 450%>
+    </div>
+
+  </div>
+
+</div> -->
+
+
+
+
+
 
 
 
