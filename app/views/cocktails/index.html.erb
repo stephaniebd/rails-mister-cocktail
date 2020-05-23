@@ -57,16 +57,18 @@
 
   <div class="background-right">
 
-    <p id="add-cocktail" class="text-right text-decoration-none" ><%= link_to "Add a cocktail", new_cocktail_path %></p>
+    <div class="links">
+      <p id="add-cocktail" class="text-right text-decoration-none" ><%= link_to "Add a cocktail", new_cocktail_path %></p>
 
-    <div class="cocktail-container">
-      <ul class="text-right">
-        <% @cocktails.each do |cocktail| %>
-            <div class="cocktail-name">
-              <li ><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-            </div>
-        <% end %>
-      </ul>
+      <div class="cocktail-container">
+        <ul class="text-right">
+          <% @cocktails.each do |cocktail| %>
+              <div class="cocktail-name">
+                <li ><%= link_to cocktail.name.upcase, cocktail_path(cocktail) %></li>
+              </div>
+          <% end %>
+        </ul>
+      </div>
     </div>
 
     <div class="container-content">

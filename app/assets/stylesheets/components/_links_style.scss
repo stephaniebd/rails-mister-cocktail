@@ -1,0 +1,43 @@
+#add-cocktail a {
+  color: $color5 !important;
+  font-weight: bold;
+  &:hover {
+    color: $color3 !important;
+  }
+}
+
+.cocktail-container a {
+  list-style: none !important;
+  font-family: Roboto;
+  font-size: 62px;
+  color: $color2;
+  font-weight: bold;
+  &:hover {
+    color: $color4 !important;
+  }
+}
+
+.links a {
+  margin-right: 55px;
+  text-decoration: none !important;
+
+}
+
+ul {
+  list-style: none !important;
+}
+
+.links {
+  margin-top: 45px !important;
+}
+
+
+
+
+
+
+// .link-style {
+//   text-decoration: none;
+//   font-family: Helvetica;
+//   color: white;
+// }

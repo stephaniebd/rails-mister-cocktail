@@ -1,22 +1,30 @@
-.color-block-content {
+.color-block-content h1 {
   position: absolute;
-  margin-left: 90px;
-  margin-top: 60px;
+  margin-left: 55px;
+  margin-top: 25px;
   top: 20px;
   left: -400px;
   font-family: Roboto;
   font-weight: 900 !important;
   color: $color3;
+  font-style: normal;
+  font-size: 62px !important;
+  line-height: 73px !important;
 }
+
+// h1 {
+//   font-family: Roboto;
+//   font-weight: 900 !important;
+// }
 
 .color-block-image {
   position: absolute;
-  top: 300px;
+  top: 375px;
   left: -350px;
   border-radius: 5px !important;
   border: 5px solid $color3;
   width: 520px;
-  height: 300px;
+  height: 250px;
   max-width:100%;
   overflow: hidden;
 }

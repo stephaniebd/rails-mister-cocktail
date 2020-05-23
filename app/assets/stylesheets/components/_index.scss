@@ -7,7 +7,7 @@
 @import "button";
 @import "background";
 @import "color_block";
-
+@import "links_style";
 // #main-container{
 //   position:relative;
 // }
@@ -23,24 +23,6 @@
 //   color: black;
 // }
 
-#add-cocktail {
-  text-decoration: none !important;
-  color: $color4 !important;
-}
 
-.cocktail-container a {
-  list-style: none !important;
-  text-decoration: none !important;
-  color: $color2;
-  &:hover {
-    color: $color4 !important;
-  }
-}
-
-// .link-style {
-//   text-decoration: none;
-//   font-family: Helvetica;
-//   color: white;
-// }
 
 
