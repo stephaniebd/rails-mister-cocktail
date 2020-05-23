@@ -1,4 +1,4 @@
-#add-cocktail a {
+#link-style a {
   color: $color5 !important;
   font-weight: bold;
   &:hover {
@@ -20,8 +20,15 @@
 .links a {
   margin-right: 55px;
   text-decoration: none !important;
-
 }
+
+// .ingredient-container a {
+//   // margin-top: 150px;
+//   margin-right: 55px,
+//   // border-radius: 5px !important;
+//   // border: 5px solid $color2;
+//   text-decoration: none !important;
+// }
 
 ul {
   list-style: none !important;
