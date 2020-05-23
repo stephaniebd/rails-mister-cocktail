@@ -1,9 +1,64 @@
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
-  <%= f.submit %>
-<% end %>
+<div class="background-left">
 
-<p><%= link_to "Back", cocktails_path %></p>
+</div>
+
+  <div id="main-container" class="d-flex">
+    <div class="background-right">
+
+      <div class="links">
+        <p id="add-cocktail" class="text-right text-decoration-none" ><%= link_to "Back", cocktails_path %></p>
+
+        <%= simple_form_for(@cocktail) do |f| %>
+          <div class="form-input">
+            <%= f.input :name %>
+            <%= f.submit class: "btn-ghost"%>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="container-content">
+        <div class="color-block-content">
+          <h1>TIME<br> FOR<br> A<br> DRINK</h1>
+        </div>
+      </div>
+
+      <div class="color-block-image">
+        <%= image_tag "partycrop.jpeg", alt: "drinks"%>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- <div class="modal-header">
@@ -17,3 +72,11 @@
   <button class="btn btn-primary">Save</button>
 </div>
  -->
+
+
+
+
+
+
+
+
