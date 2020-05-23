@@ -5,7 +5,8 @@
 @import "card";
 @import "banner";
 @import "button";
-
+@import "background";
+@import "color_block";
 
 // #main-container{
 //   position:relative;
@@ -15,42 +16,6 @@
 //   // position: relative;
 // }
 
-// .color-block-content {
-//   position: absolute;
-//   margin-left: 90px;
-//   margin-top: 60px;
-//   top: 20px;
-//   left: -400px;
-//   font-family: Roboto;
-//   font-weight: bold;
-// }
-
-// .color-block-image {
-//   position: absolute;
-//   top: 300px;
-//   left: -350px;
-//   border-radius: 4px;
-// }
-
-// .background-left {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 35%;
-//   height: 100%;
-//   background-color: #FE5E41;
-//   // background-color: #FCD0A1;
-//   // border: 1px solid black
-// }
-// .background-right {
-//   position: fixed;
-//   // float: right;
-//   top: 0;
-//   right: 0;
-//   width: 65%;
-//   height: 100%;
-//   background-color: #F4EDED;
-// }
 
 // .cocktail-name{
 //   text-decoration: none !important;
@@ -58,14 +23,24 @@
 //   color: black;
 // }
 
-// li {
-//   text-decoration: none;
-
-// }
-.link-style{
-  text-decoration: none;
-  font-family: Helvetica;
-  color: white;
+#add-cocktail {
+  text-decoration: none !important;
+  color: $color4 !important;
 }
+
+.cocktail-container a {
+  list-style: none !important;
+  text-decoration: none !important;
+  color: $color2;
+  &:hover {
+    color: $color4 !important;
+  }
+}
+
+// .link-style {
+//   text-decoration: none;
+//   font-family: Helvetica;
+//   color: white;
+// }
 
 
