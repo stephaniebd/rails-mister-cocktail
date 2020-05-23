@@ -6,6 +6,10 @@
   }
 }
 
+#link-style p {
+  margin-top: 200px;
+}
+
 .cocktail-container a {
   list-style: none !important;
   font-family: Roboto;
@@ -18,7 +22,7 @@
 }
 
 .links a {
-  margin-right: 55px;
+  margin-right: 75px;
   text-decoration: none !important;
 }
 
@@ -32,19 +36,24 @@
 
 ul {
   list-style: none !important;
+  padding-left: 0px;
+}
+
+p, li {
+  color: $color5;
+}
+
+.link-mt {
+  position: absolute;
+  margin-top: 20px;
 }
 
 .links {
   margin-top: 45px !important;
 }
 
+i {
+  font-size: 10px;
+}
 
 
-
-
-
-// .link-style {
-//   text-decoration: none;
-//   font-family: Helvetica;
-//   color: white;
-// }
