@@ -1,3 +1,5 @@
+require "open-uri"
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 
@@ -26,10 +28,26 @@ dry_vermouth = Ingredient.create(name: 'dry vermouth')
 sweet_vermouth = Ingredient.create(name: 'sweet vermouth')
 
 # --- cocktails objets stored in variables to use when creating doses
+
+# martini = URI.open("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbcgoodfood.com%2Frecipes%2Fmartini&psig=AOvVaw0lMKr7huVv_58LpsJ74MMw&ust=1590358290026000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDvoNGAy-kCFQAAAAAdAAAAABAD")
+
+# dark_and_stormy = URI.open("")
+
+# margarita = URI.open("/margarita.jpg")
+
+# negroni = URI.open("/negroni.jpeg")
+
+# gin_tonic = URI.open("/gin tonic.jpg")
+
+
 martini = Cocktail.create(name: 'Martini')
+
 dark_and_stormy = Cocktail.create(name: 'Dark & Stormy')
-daiquiri = Cocktail.create(name: 'Margarita')
+
+margarita = Cocktail.create(name: 'Margarita')
+
 negroni = Cocktail.create(name: 'Negroni')
+
 gin_tonic = Cocktail.create(name: 'Gin & Tonic')
 
 # --- dose
@@ -48,6 +66,6 @@ Dose.create(description: '1 oz of', cocktail: martini, ingredient: dry_vermouth)
 Dose.create(description: '1 part of of', cocktail: dark_and_stormy, ingredient: dark_rum)
 Dose.create(description: '2 parts of of', cocktail: dark_and_stormy, ingredient: ginger_beer)
 
-Dose.create(description: '2 oz of', cocktail: daiquiri, ingredient: light_rum)
-Dose.create(description: '1 oz of', cocktail: daiquiri, ingredient: lime_juice)
-Dose.create(description: '3/4 oz of', cocktail: daiquiri, ingredient: syrup)
+Dose.create(description: '2 oz of', cocktail: margarita, ingredient: light_rum)
+Dose.create(description: '1 oz of', cocktail: margarita, ingredient: lime_juice)
+Dose.create(description: '3/4 oz of', cocktail: margarita, ingredient: syrup)

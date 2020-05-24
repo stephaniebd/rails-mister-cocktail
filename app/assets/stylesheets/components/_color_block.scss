@@ -25,10 +25,6 @@
   font-size: 62px !important;
   line-height: 73px !important;
 }
-// h1 {
-//   font-family: Roboto;
-//   font-weight: 900 !important;
-// }
 
 .color-block-image {
   position: absolute;
@@ -64,6 +60,6 @@
   height: 400px;
 }
 
-// .color-block-image img {
-//     margin: -6px 0px 0px -75px;
-// }
+#dose-img {
+  border: 5px solid $color5;
+}

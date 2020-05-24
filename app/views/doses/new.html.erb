@@ -1,7 +1,30 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.submit %>
-<% end %>
+<div class="background-left-yellow">
 
-<p><%= link_to "Back", cocktails_path %></p>
+</div>
+
+  <div id="main-container" class="d-flex">
+    <div class="background-right">
+
+      <div class="links">
+        <p id="link-style" class="text-right text-decoration-none" ><%= link_to "Back to cocktail", cocktail_path(@cocktail) %></p>
+
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
+          <div class="form-input">
+            <%= f.input :description %>
+            <%= f.association :ingredient %>
+            <%= f.submit class: "btn-ghost"%>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="container-content">
+        <div class="color-block-content-yellow">
+          <h1>ADD<br> A<br> DOSE</h1>
+        </div>
+      </div>
+
+      <div id="dose-img" class="color-block-image">
+        <%= cl_image_tag "vi7orrhi5axfozzk5iaj", width: 520, height: 250, crop: :fill, alt: "drinks"%>
+      </div>
+    </div>
+  </div>

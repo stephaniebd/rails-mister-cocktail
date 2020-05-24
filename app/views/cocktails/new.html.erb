@@ -6,11 +6,12 @@
     <div class="background-right">
 
       <div class="links">
-        <p id="link-style" class="text-right text-decoration-none" ><%= link_to "Back", cocktails_path %></p>
+        <p id="link-style" class="text-right text-decoration-none" ><%= link_to "Back to menu", cocktails_path %></p>
 
         <%= simple_form_for(@cocktail) do |f| %>
           <div class="form-input">
             <%= f.input :name %>
+            <%= f.input :photo, as: :file %>
             <%= f.submit class: "btn-ghost"%>
           </div>
         <% end %>
@@ -18,7 +19,7 @@
 
       <div class="container-content">
         <div class="color-block-content">
-          <h1>TIME<br> FOR<br> A<br> DRINK</h1>
+          <h1>ADD<br> A<br> DRINK</h1>
         </div>
       </div>
 
